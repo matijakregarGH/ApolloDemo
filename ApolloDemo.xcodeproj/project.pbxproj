@@ -14,6 +14,13 @@
 		925F510F2919427A00A754F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 925F510D2919427A00A754F7 /* Main.storyboard */; };
 		925F51112919427C00A754F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 925F51102919427C00A754F7 /* Assets.xcassets */; };
 		925F51142919427C00A754F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 925F51122919427C00A754F7 /* LaunchScreen.storyboard */; };
+		928A7B11291A3DAB0032B35B /* ApolloDemoSchema.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A7B05291A3DAB0032B35B /* ApolloDemoSchema.graphql.swift */; };
+		928A7B12291A3DAB0032B35B /* DocumentsQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A7B08291A3DAB0032B35B /* DocumentsQuery.graphql.swift */; };
+		928A7B13291A3DAB0032B35B /* DocumentType.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A7B0B291A3DAB0032B35B /* DocumentType.graphql.swift */; };
+		928A7B14291A3DAB0032B35B /* Query.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A7B0D291A3DAB0032B35B /* Query.graphql.swift */; };
+		928A7B15291A3DAB0032B35B /* Document.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A7B0E291A3DAB0032B35B /* Document.graphql.swift */; };
+		928A7B16291A3DAB0032B35B /* SchemaConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A7B0F291A3DAB0032B35B /* SchemaConfiguration.swift */; };
+		928A7B17291A3DAB0032B35B /* SchemaMetadata.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A7B10291A3DAB0032B35B /* SchemaMetadata.graphql.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +37,13 @@
 		925F51152919427C00A754F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		928A7AC7291957260032B35B /* schema.graphqls */ = {isa = PBXFileReference; lastKnownFileType = text; path = schema.graphqls; sourceTree = "<group>"; };
 		928A7AC92919584C0032B35B /* Documents.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Documents.graphql; sourceTree = "<group>"; };
+		928A7B05291A3DAB0032B35B /* ApolloDemoSchema.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloDemoSchema.graphql.swift; sourceTree = "<group>"; };
+		928A7B08291A3DAB0032B35B /* DocumentsQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentsQuery.graphql.swift; sourceTree = "<group>"; };
+		928A7B0B291A3DAB0032B35B /* DocumentType.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentType.graphql.swift; sourceTree = "<group>"; };
+		928A7B0D291A3DAB0032B35B /* Query.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Query.graphql.swift; sourceTree = "<group>"; };
+		928A7B0E291A3DAB0032B35B /* Document.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Document.graphql.swift; sourceTree = "<group>"; };
+		928A7B0F291A3DAB0032B35B /* SchemaConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaConfiguration.swift; sourceTree = "<group>"; };
+		928A7B10291A3DAB0032B35B /* SchemaMetadata.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaMetadata.graphql.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,10 +94,65 @@
 		928A7AC6291955570032B35B /* GraphQL */ = {
 			isa = PBXGroup;
 			children = (
+				928A7B04291A3DAB0032B35B /* Generated */,
 				928A7AC7291957260032B35B /* schema.graphqls */,
 				928A7AC92919584C0032B35B /* Documents.graphql */,
 			);
 			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		928A7B04291A3DAB0032B35B /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				928A7B05291A3DAB0032B35B /* ApolloDemoSchema.graphql.swift */,
+				928A7B06291A3DAB0032B35B /* Operations */,
+				928A7B09291A3DAB0032B35B /* Schema */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		928A7B06291A3DAB0032B35B /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				928A7B07291A3DAB0032B35B /* Queries */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		928A7B07291A3DAB0032B35B /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				928A7B08291A3DAB0032B35B /* DocumentsQuery.graphql.swift */,
+			);
+			path = Queries;
+			sourceTree = "<group>";
+		};
+		928A7B09291A3DAB0032B35B /* Schema */ = {
+			isa = PBXGroup;
+			children = (
+				928A7B0A291A3DAB0032B35B /* Enums */,
+				928A7B0C291A3DAB0032B35B /* Objects */,
+				928A7B0F291A3DAB0032B35B /* SchemaConfiguration.swift */,
+				928A7B10291A3DAB0032B35B /* SchemaMetadata.graphql.swift */,
+			);
+			path = Schema;
+			sourceTree = "<group>";
+		};
+		928A7B0A291A3DAB0032B35B /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				928A7B0B291A3DAB0032B35B /* DocumentType.graphql.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		928A7B0C291A3DAB0032B35B /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				928A7B0D291A3DAB0032B35B /* Query.graphql.swift */,
+				928A7B0E291A3DAB0032B35B /* Document.graphql.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 		96117B7381543DEB932A6E61 /* Frameworks */ = {
@@ -218,9 +287,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				928A7B12291A3DAB0032B35B /* DocumentsQuery.graphql.swift in Sources */,
 				925F510C2919427A00A754F7 /* ViewController.swift in Sources */,
 				925F51082919427A00A754F7 /* AppDelegate.swift in Sources */,
+				928A7B13291A3DAB0032B35B /* DocumentType.graphql.swift in Sources */,
 				925F510A2919427A00A754F7 /* SceneDelegate.swift in Sources */,
+				928A7B15291A3DAB0032B35B /* Document.graphql.swift in Sources */,
+				928A7B11291A3DAB0032B35B /* ApolloDemoSchema.graphql.swift in Sources */,
+				928A7B14291A3DAB0032B35B /* Query.graphql.swift in Sources */,
+				928A7B17291A3DAB0032B35B /* SchemaMetadata.graphql.swift in Sources */,
+				928A7B16291A3DAB0032B35B /* SchemaConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
