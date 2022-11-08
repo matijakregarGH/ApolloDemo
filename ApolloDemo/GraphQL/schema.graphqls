@@ -1,0 +1,14 @@
+type Query {
+  documents: [Document!]!
+}
+
+enum DocumentType {
+  PersonalID
+  Passport
+  DriversLicense
+}
+
+type Document {
+  title: String!
+  type: DocumentType
+}

@@ -1,0 +1,6 @@
+query Documents {
+  documents {
+    title
+    type
+  }
+}
